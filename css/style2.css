@@ -1,0 +1,35 @@
+.image_end{
+    display:flex;
+    justify-content: flex-end;
+    border:2px solid red;
+}
+.profile{
+    z-index:300;
+    display:flex !important;
+    border:1px solid rgba(250,250,250,.3) !important;
+    padding:2em !important;
+    justify-content:center !important;
+    align-items:center !important;
+    width:70% !important;
+    gap:1em !important
+}
+@media screen and (max-width:991px) {
+.profile{
+    width:100% !important;
+}
+.profile img{
+    width: 200px !important;
+}
+    
+}
+@media screen and (max-width:500px) {
+.profile{
+    flex-direction: column;
+}
+.profile img{
+    width: 150px !important;
+}
+.profile h1{
+    font-size: 2.5rem !important;
+}
+}
